@@ -1,8 +1,8 @@
 
-var EthersHeadsOrTails = require('./ethers.js');
+var EthersCallContract = require('./ethers.js');
  
-function checkOddOrEven(){
-  return EthersHeadsOrTails.getToken();
+function ethCall(){
+  return EthersCallContract.callContract();
 }
 
-setInterval(checkOddOrEven, 16000);
+setInterval(ethCall, 3000);

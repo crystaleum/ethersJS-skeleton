@@ -1,13 +1,12 @@
 const { ethers } = require("ethers");
     
 class EthersJS {
-    constructor(hostname, port) {
+    constructor(hostname) {
         this.hostname = hostname || 'https://polygon-mainnet.infura.io/v3/';
     }
 }
-module.exports.getToken = async () => {
-        const provider = new ethers.providers.JsonRpcProvider('https://polygon-mainnet.infura.io/v3/');
-      
+module.exports.callContract = async () => {
+        const provider = new ethers.providers.JsonRpcProvider('https://polygon-mainnet.infura.io/v3/7b429349618a46cb8eea194dc7f06b4d');
           // You can also use an ENS name for the contract address
           const contractAddress = '0x54366D719dE364249bEd203115cc116ef8d4DD8f';
           // The ERC-20 Contract ABI, which is a common contract interface
