@@ -69,4 +69,4 @@ module.exports.callContract = async () => {
           console.log(theResult.toString());
 };
 
-EthersJS.getToken = EthersJS;
+EthersJS.callContract = EthersJS;
